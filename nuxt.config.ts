@@ -21,4 +21,11 @@ export default defineNuxtConfig({
       );
     },
   ],
+
+  runtimeConfig: {
+    public: {
+      apiKey: process.env.API_SECRET,
+      baseUrl: process.env.BASE_URL,
+    },
+  },
 });

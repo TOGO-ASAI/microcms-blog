@@ -1,11 +1,15 @@
 <script setup>
 const route = useRoute();
 const slug = route.params.slug;
-
+const config = useRuntimeConfig();
+const baseURL = config.public.baseUrl;
+const apiKey = config.public.apiKey;
+console.log("baseURL", baseURL);
+console.log("apiKey", apiKey);
 const { data: article } = await useFetch(`/blogs/${slug}`, {
-  baseURL: "https://togoblog.microcms.io/api/v1/",
+  baseURL: baseURL,
   headers: {
-    "X-MICROCMS-API-KEY": "3ldJO9kyxU5kMMN3uYZ7vt22eJqWENFOh4g6",
+    "X-MICROCMS-API-KEY": apiKey,
   },
 });
 </script>
@@ -23,6 +27,10 @@ const { data: article } = await useFetch(`/blogs/${slug}`, {
 </template>
 
 <style lang="scss" scoped>
+* {
+  color: white;
+}
+
 .main {
   width: 60%;
   margin: 0 auto;
