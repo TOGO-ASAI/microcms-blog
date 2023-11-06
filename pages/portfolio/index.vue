@@ -429,7 +429,7 @@ p {
   background-color: white;
   display: flex;
   align-items: center;
-  width: 8.5rem;
+  width: 140px;
   padding: 8px;
   margin: 2rem 0;
 }
