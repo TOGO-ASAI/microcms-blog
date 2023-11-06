@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <template v-for="article in data.contents" :key="article.id">
-      <post :post="article" />
+      <post class="post-wrapper" :post="article" />
     </template>
   </div>
 </template>
@@ -27,7 +27,28 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: rgb(166, 166, 166);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+
 li {
   list-style: none;
+}
+
+.post-wrapper {
+  margin: 0 20px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 </style>

@@ -42,6 +42,7 @@ header {
   font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro",
     "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   color: rgb(166, 166, 166);
+  font-size: 12px;
 }
 
 .header-right {

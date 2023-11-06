@@ -14,6 +14,7 @@ export default defineNuxtConfig({
       noExternal: ["vuetify"],
     },
   },
+
   modules: [
     async (_, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config: any) =>
