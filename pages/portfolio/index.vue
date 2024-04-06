@@ -4,7 +4,7 @@
       <h1 class="top-title">Togo Asai</h1>
       <h2 class="">official website</h2>
       <div class="mt-9">
-        <h3 class="scroll-arrow">Look Up ➡</h3>
+        <Nuxt-link to="#about"><h3 class="scroll-arrow">Look Up ➡</h3></Nuxt-link>
       </div>
       <!-- <h2 class="section-name">Portfolio</h2>
       <picture>
@@ -109,7 +109,7 @@
             </button>
           </a>
         </div>
-        <div class="contact-message">お気軽にご連絡ください。<br />お返事をさせていただくまでにお時間を要する場合があります。また、内容によりお返事ができない場合がございますのでご了承ください。</div>
+        <div class="contact-message">お気軽にご連絡ください。<br />ただ、お返事をさせていただくまでにお時間を要する場合があります。また、内容によりお返事ができない場合がございますのでご了承ください。</div>
       </div>
     </div>
   </NuxtLayout>
@@ -171,7 +171,6 @@ p {
 
 .top-container {
   margin-top: 70px;
-  margin-bottom: 10vh;
   height: 85vh;
   display: flex;
   flex-direction: column;
@@ -208,7 +207,8 @@ p {
 .about-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30vh;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
 }
 
 .about-image {
@@ -227,8 +227,11 @@ p {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 .about-text {
   margin-right: 1.5rem;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -239,13 +242,14 @@ p {
 }
 
 .about-text p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8rem;
 }
 
 .skill-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 15vh;
   margin-bottom: 30vh;
 }
 
@@ -447,7 +451,7 @@ p {
     margin: 60px auto 0 auto;
     width: 90%;
   }
-  
+
   .top-container picture {
     width: 100%;
     margin-left: 0;
@@ -550,9 +554,13 @@ p {
     flex-direction: column-reverse;
     align-items: center;
   }
-
   .contact-message {
     margin: 1rem 0;
+    font-size: 12px;
+  }
+
+  .about-text p {
+    font-size: 12px;
   }
 }
 </style>
