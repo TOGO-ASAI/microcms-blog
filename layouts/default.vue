@@ -14,8 +14,7 @@
 
 <style>
 * {
-  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro",
-    "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   color: rgb(166, 166, 166);
 }
 
@@ -61,7 +60,7 @@ main {
 }
 
 body {
-  background: linear-gradient(rgb(0, 0, 10), rgb(0, 30, 40));
+  background: linear-gradient(rgb(0, 20, 40), rgb(0, 70, 80));
   min-height: 150vh;
   background-attachment: fixed;
 }

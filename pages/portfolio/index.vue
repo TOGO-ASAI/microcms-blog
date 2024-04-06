@@ -1,57 +1,43 @@
 <template>
   <NuxtLayout name="portfolio">
     <div class="top-container" data-aos="fade-in">
-      <h2 class="section-name">Portfolio</h2>
+      <h1 class="top-title">Togo Asai</h1>
+      <h2 class="">official website</h2>
+      <div class="mt-9">
+        <h3 class="scroll-arrow">Look Up ➡</h3>
+      </div>
+      <!-- <h2 class="section-name">Portfolio</h2>
       <picture>
-        <source
-          media="(max-width: 960px)"
-          srcset="../../assets/top-image-mobile.png"
-        />
+        <source media="(max-width: 960px)" srcset="../../assets/top-image-mobile.png" />
         <img class="top-image" src="../../assets/top-image.png" />
-      </picture>
+      </picture> -->
     </div>
     <div id="about" class="about-container" data-aos="fade-up">
       <h2 class="section-name">About</h2>
       <div class="about-content">
         <div class="about-text">
           <h3 class="my-name">Togo Asai</h3>
-          <p>
-            　工業高校の電気科を卒業し、システム運用を約1年経験。その後、英語の学習と新たな経験を積むためにオーストラリアに移住し、言語学校卒業後メルボルンでバリスタとして勤務しながら計１年間生活。帰国後はシステムエンジニアとして日本のIT企業に就職して現在も勤務中。
-          </p>
+          <p>　工業高校の電気科を卒業し、サーバー運用を約1年経験。その後、英語の学習と新たな経験を積むためにオーストラリアに移住し、メルボルンでバリスタとして半年以上勤務。計一年間の海外経験を経て帰国し、現在はシステムエンジニアとして企画や開発を起こっています。</p>
           <br class="line-break" />
-          <p>
-            　スキルの提供によりクライアントの問題解決を行いながら自身のスキルを高めるwin-winの状態を作ることを意識して活動しています。現在のところは本業以外の時間で通訳・翻訳・開発系（WEBまたは業務効率改善計が中心）の案件を受注していますが、自身の事業を主体にグローバルに活動できるようになることが目標です。また、科学的根拠をもとに業務効率及び満足度の改善を目的としたサービスを開発中です。
-          </p>
+          <p>　具体的には海外進出中スタートアップ企業の業務改善ツール開発や自分企画のWEBサービス開発をチーム作成から行ったりしています。今後はAI時代を見据えた教育系のWEBサービスの開発や、スキル習得支援系のWEBサービスの開発を行いたいと考えています。</p>
         </div>
-        <img
-          class="about-image"
-          src="../../assets/about-image.png"
-          alt="proifle-image"
-        />
+        <img class="about-image" src="../../assets/prof_square.png" alt="profile-image" />
       </div>
     </div>
-    <div
-      id="skill"
-      class="skill-container"
-      data-aos="flip-left"
-      data-aos-duration="3000"
-    >
+    <div id="skill" class="skill-container" data-aos="flip-left" data-aos-duration="3000">
       <h2 class="section-name">Skill</h2>
       <div class="skill-content">
         <div class="py-8 pl-10 pr-5 skill-text">
-          <h3 class="skill-h3">Development</h3>
+          <h3 class="skill-h3">Development Skills</h3>
           <ul class="skill-list mb-7">
             <li>HTML, CSS, JavaScript, GAS, PHP, Python</li>
-            <li>Vue.js, Nuxt.js, Flask, API</li>
-            <li>Git, Docker, VSCode, AWS, Linux</li>
+            <li>Vue.js, Nuxt.js, Next.js, Flask, Laravel, API</li>
+            <li>Git Hub, Docker, VSCode, AWS, Linux</li>
           </ul>
-          <h3 class="skill-h3">Side Gigs</h3>
+          <h3 class="skill-h3">Side Skills</h3>
           <ul class="skill-list mb-3">
             <li>Writing, Translate(Eng-Jap), Research</li>
-            <li>
-              WordPress, Figma, Photoshop, Adobe Illustrator, Adobe XD, ChatGPT,
-              DALL-E 3, Notion
-            </li>
+            <li>WordPress, Figma, Photoshop, Adobe Illustrator, Adobe XD, ChatGPT, DALL-E 3, Notion</li>
           </ul>
         </div>
         <img src="../../assets/skill-image.png" />
@@ -63,46 +49,25 @@
         <div class="gallery-left">
           <a href="https://chapteronebrooklyn.com/">
             <picture>
-              <source
-                media="(max-width: 520px)"
-                srcset="../../assets/ch1_mobile.png"
-              />
-              <img
-                class="ch1-mobile"
-                src="../../assets/chapteronebrooklyn.com_(iPhone 12 Pro).png"
-                alt="Descriptive text for the image"
-              /> </picture
+              <source media="(max-width: 520px)" srcset="../../assets/ch1_mobile.png" />
+              <img class="ch1-mobile" src="../../assets/chapteronebrooklyn.com_(iPhone 12 Pro).png" alt="Descriptive text for the image" /> </picture
           ></a>
         </div>
         <div class="gallery-right">
           <div class="gallery-top-right">
-            <a href="https://chapteronebrooklyn.com/"
-              ><img
-                class="ch1-desktop"
-                src="../../assets/chapteronebrooklyn.com_ (2).png"
-            /></a>
+            <a href="https://chapteronebrooklyn.com/"><img class="ch1-desktop" src="../../assets/chapteronebrooklyn.com_ (2).png" /></a>
           </div>
           <div class="gallery-bottom-right">
             <div class="translate-wrapper">
-              <img
-                class="translate-image"
-                src="../../assets/DALL·E 2023-11-03 19.08.31 - A hyper-realistic image capturing a diverse group of tourists engaging in a lively conversation on a vibrant street in Japan. The group is composed of.png"
-                @click="showTranslate = !showTranslate"
-              />
+              <img class="translate-image" src="../../assets/DALL·E 2023-11-03 19.08.31 - A hyper-realistic image capturing a diverse group of tourists engaging in a lively conversation on a vibrant street in Japan. The group is composed of.png" @click="showTranslate = !showTranslate" />
             </div>
             <div class="gas-wrapper">
-              <img
-                class="gas-image"
-                src="../../assets/GAS_img.png"
-                @click="showGas = !showGas"
-              />
+              <img class="gas-image" src="../../assets/GAS_img.png" @click="showGas = !showGas" />
             </div>
           </div>
         </div>
         <div class="modal" v-if="showTranslate">
-          <button class="close-button" @click="showTranslate = !showTranslate">
-            Close
-          </button>
+          <button class="close-button" @click="showTranslate = !showTranslate">Close</button>
 
           <h3>外国人観光客を対象にした通訳兼ガイド in 東京</h3>
           <p>
@@ -111,13 +76,8 @@
           </p>
         </div>
         <div class="modal" v-if="showGas">
-          <button class="close-button" @click="showGas = !showGas">
-            Close
-          </button>
-          <h3>
-            Notion APIとGoogle App
-            Scriptを連携した資料作成業務の自動化ツール開発
-          </h3>
+          <button class="close-button" @click="showGas = !showGas">Close</button>
+          <h3>Notion APIとGoogle App Scriptを連携した資料作成業務の自動化ツール開発</h3>
           <p>
             形態：業務委託<br />
             開発期間：約３週間<br />
@@ -136,30 +96,20 @@
               <span class="sns-name">Email</span>
             </button>
           </a>
-          <a
-            href="https://www.facebook.com/togo.togo.35762241/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.facebook.com/togo.togo.35762241/" target="_blank" rel="noopener noreferrer">
             <button class="sns-button">
               <facebook-icon class="sns-icon" :size="36" fillColor="#000E12" />
               <span class="sns-name">Facebook</span>
             </button>
           </a>
-          <a
-            href="https://www.instagram.com/togo.asai/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.instagram.com/togo.asai/" target="_blank" rel="noopener noreferrer">
             <button class="sns-button">
               <instagram-icon class="sns-icon" :size="36" fillColor="#000E12" />
               <span class="sns-name">Instagram</span>
             </button>
           </a>
         </div>
-        <div class="contact-message">
-          お気軽にご連絡ください。<br />お返事をさせていただくまでにお時間を要する場合があります。また、内容によりお返事ができない場合がございますのでご了承ください。
-        </div>
+        <div class="contact-message">お気軽にご連絡ください。<br />お返事をさせていただくまでにお時間を要する場合があります。また、内容によりお返事ができない場合がございますのでご了承ください。</div>
       </div>
     </div>
   </NuxtLayout>
@@ -221,11 +171,28 @@ p {
 
 .top-container {
   margin-top: 70px;
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
+  height: 85vh;
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  flex-direction: column;
+  /* justify-content: center; */
   width: 100%;
+}
+
+.top-title {
+  font-size: 4rem;
+  color: #a0a0a0;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  writing-mode: vertical-lr;
+  font-size: 20px;
+  color: rgba(1, 42, 59, 1);
+  background-color: #a0a0a0cf;
+  /* padding:20px 3px 25vh 3px; */
+  padding: 25vh 3px 20px 3px;
 }
 
 .top-container picture {
@@ -247,6 +214,7 @@ p {
 .about-image {
   width: 35%;
   margin: auto 0;
+  border-radius: 50%;
 }
 
 .about-content {
@@ -476,9 +444,10 @@ p {
   .top-container {
     flex-direction: column;
     margin-bottom: 10vh;
-    margin-top: 50px;
-    width: 100vw;
+    margin: 60px auto 0 auto;
+    width: 90%;
   }
+  
   .top-container picture {
     width: 100%;
     margin-left: 0;
