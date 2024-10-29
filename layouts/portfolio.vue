@@ -3,12 +3,18 @@
     <header>
       <!-- <font-awesome-icon icon="fa-solid fa-bars" style="height: 35px" /> -->
       <ul class="header-list">
-        <Nuxt-link to="#about"><li class="header-list-item">About</li></Nuxt-link>
-        <Nuxt-link to="#skill"><li class="header-list-item">Skill</li></Nuxt-link>
-        <Nuxt-link to="#work">
+        <Nuxt-link to="#about" @click.native="removeHash"
+          ><li class="header-list-item">About</li></Nuxt-link
+        >
+        <Nuxt-link to="#skill" @click.native="removeHash"
+          ><li class="header-list-item">Skill</li></Nuxt-link
+        >
+        <Nuxt-link to="#work" @click.native="removeHash">
           <li class="header-list-item">Work</li>
         </Nuxt-link>
-        <li class="header-list-item">Contact</li>
+        <Nuxt-link to="#contact" @click.native="removeHash">
+          <li class="header-list-item">Contact</li></Nuxt-link
+        >
       </ul>
     </header>
     <main>
@@ -20,9 +26,18 @@
   </div>
 </template>
 
+<script setup lang="ts">
+function removeHash() {
+  setTimeout(() => {
+    history.replaceState(null, "", " ");
+  }, 10);
+}
+</script>
+
 <style>
 * {
-  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   color: rgb(166, 166, 166);
 }
 
@@ -40,7 +55,8 @@ header {
   top: 0;
   left: 0;
   position: fixed;
-  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Yu Mincho", "YuMincho", "游明朝体", "游明朝", "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   color: rgb(166, 166, 166);
   font-size: 18px;
 }

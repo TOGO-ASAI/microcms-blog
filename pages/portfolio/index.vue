@@ -4,70 +4,99 @@
       <h1 class="top-title">Togo Asai</h1>
       <h2 class="">official website</h2>
       <div class="mt-9">
-        <Nuxt-link to="#about"><h3 class="scroll-arrow">Look Up ➡</h3></Nuxt-link>
+        <Nuxt-link to="#about" @click.native="removeHash"
+          ><h3 class="scroll-arrow">Look Up ➡</h3></Nuxt-link
+        >
       </div>
-      <!-- <h2 class="section-name">Portfolio</h2>
-      <picture>
-        <source media="(max-width: 960px)" srcset="../../assets/top-image-mobile.png" />
-        <img class="top-image" src="../../assets/top-image.png" />
-      </picture> -->
     </div>
-    <div id="about" class="about-container" data-aos="fade-up">
-      <h2 class="section-name">About</h2>
+    <div id="about" class="about-container" data-aos="fade-in">
+      <h2 class="section-name">ABOUT</h2>
       <div class="about-content">
         <div class="about-text">
           <h3 class="my-name">Togo Asai</h3>
-          <p>　工業高校の電気科を卒業し、サーバー運用を約1年経験。その後、英語の学習と新たな経験を積むためにオーストラリアに移住し、メルボルンでバリスタとして半年以上勤務。計一年間の海外経験を経て帰国し、現在はシステムエンジニアとして企画や開発を起こっています。</p>
+          <p>
+            工業高校の電気科を卒業し、サーバー運用を約1年経験。その後、英語の学習と新たな経験を積むためにオーストラリアに移住し、メルボルンでバリスタとして半年以上勤務。計一年間の海外経験を経て帰国し、現在はシステムエンジニアとして企画や開発を起こっています。
+          </p>
           <br class="line-break" />
-          <p>　具体的には海外進出中スタートアップ企業の業務改善ツール開発や自分企画のWEBサービス開発をチーム作成から行ったりしています。今後はAI時代を見据えた教育系のWEBサービスの開発や、スキル習得支援系のWEBサービスの開発を行いたいと考えています。</p>
+          <p>
+            具体的には海外進出中スタートアップ企業の業務改善ツール開発や自分企画のWEBサービス開発をチーム作成から行ったりしています。今後はAI時代を見据えた教育系のWEBサービスの開発や、スキル習得支援系のWEBサービスの開発を行いたいと考えています。
+          </p>
         </div>
-        <img class="about-image" src="../../assets/prof_square.png" alt="profile-image" />
+        <img
+          class="about-image"
+          src="../../assets/prof_square.png"
+          alt="profile-image"
+        />
       </div>
     </div>
-    <div id="skill" class="skill-container" data-aos="flip-left" data-aos-duration="3000">
-      <h2 class="section-name">Skill</h2>
+    <div id="skill" class="skill-container" data-aos="fade-in">
+      <h2 class="section-name">SKILL</h2>
       <div class="skill-content">
-        <div class="py-8 pl-10 pr-5 skill-text">
-          <h3 class="skill-h3">Development Skills</h3>
+        <div class="skill-text">
+          <h3 class="skill-h3">DEVELOPMENT</h3>
           <ul class="skill-list mb-7">
             <li>HTML, CSS, JavaScript, GAS, PHP, Python</li>
             <li>Vue.js, Nuxt.js, Next.js, Flask, Laravel, API</li>
             <li>Git Hub, Docker, VSCode, AWS, Linux</li>
           </ul>
-          <h3 class="skill-h3">Side Skills</h3>
+          <h3 class="skill-h3">OTHER</h3>
           <ul class="skill-list mb-3">
             <li>Writing, Translate(Eng-Jap), Research</li>
-            <li>WordPress, Figma, Photoshop, Adobe Illustrator, Adobe XD, ChatGPT, DALL-E 3, Notion</li>
+            <li>
+              WordPress, Figma, Photoshop, Adobe Illustrator, Adobe XD, ChatGPT,
+              DALL-E 3, Notion
+            </li>
           </ul>
         </div>
         <img src="../../assets/skill-image.png" />
       </div>
     </div>
-    <div id="work" class="work-container" data-aos="zoom-in">
-      <h2 class="section-name">Work</h2>
+    <div id="work" class="work-container" data-aos="fade-in">
+      <h2 class="section-name">WORK</h2>
       <div class="work-gallery">
         <div class="gallery-left">
           <a href="https://chapteronebrooklyn.com/">
             <picture>
-              <source media="(max-width: 520px)" srcset="../../assets/ch1_mobile.png" />
-              <img class="ch1-mobile" src="../../assets/chapteronebrooklyn.com_(iPhone 12 Pro).png" alt="Descriptive text for the image" /> </picture
+              <source
+                media="(max-width: 520px)"
+                srcset="../../assets/ch1_mobile.png"
+              />
+              <img
+                class="ch1-mobile"
+                src="../../assets/chapteronebrooklyn.com_(iPhone 12 Pro).png"
+                alt="Descriptive text for the image"
+              /> </picture
           ></a>
         </div>
         <div class="gallery-right">
           <div class="gallery-top-right">
-            <a href="https://chapteronebrooklyn.com/"><img class="ch1-desktop" src="../../assets/chapteronebrooklyn.com_ (2).png" /></a>
+            <a href="https://chapteronebrooklyn.com/"
+              ><img
+                class="ch1-desktop"
+                src="../../assets/chapteronebrooklyn.com_ (2).png"
+            /></a>
           </div>
           <div class="gallery-bottom-right">
             <div class="translate-wrapper">
-              <img class="translate-image" src="../../assets/DALL·E 2023-11-03 19.08.31 - A hyper-realistic image capturing a diverse group of tourists engaging in a lively conversation on a vibrant street in Japan. The group is composed of.png" @click="showTranslate = !showTranslate" />
+              <img
+                class="translate-image"
+                src="../../assets/DALL·E 2023-11-03 19.08.31 - A hyper-realistic image capturing a diverse group of tourists engaging in a lively conversation on a vibrant street in Japan. The group is composed of.png"
+                @click="showTranslate = !showTranslate"
+              />
             </div>
             <div class="gas-wrapper">
-              <img class="gas-image" src="../../assets/GAS_img.png" @click="showGas = !showGas" />
+              <img
+                class="gas-image"
+                src="../../assets/GAS_img.png"
+                @click="showGas = !showGas"
+              />
             </div>
           </div>
         </div>
         <div class="modal" v-if="showTranslate">
-          <button class="close-button" @click="showTranslate = !showTranslate">Close</button>
+          <button class="close-button" @click="showTranslate = !showTranslate">
+            Close
+          </button>
 
           <h3>外国人観光客を対象にした通訳兼ガイド in 東京</h3>
           <p>
@@ -76,8 +105,13 @@
           </p>
         </div>
         <div class="modal" v-if="showGas">
-          <button class="close-button" @click="showGas = !showGas">Close</button>
-          <h3>Notion APIとGoogle App Scriptを連携した資料作成業務の自動化ツール開発</h3>
+          <button class="close-button" @click="showGas = !showGas">
+            Close
+          </button>
+          <h3>
+            Notion APIとGoogle App
+            Scriptを連携した資料作成業務の自動化ツール開発
+          </h3>
           <p>
             形態：業務委託<br />
             開発期間：約３週間<br />
@@ -86,8 +120,8 @@
         </div>
       </div>
     </div>
-    <div class="contact-container" data-aos="fade-in">
-      <h2 class="section-name">Contact</h2>
+    <div id="contact" class="contact-container" data-aos="fade-in">
+      <h2 class="section-name">CONTACT</h2>
       <div class="contact-content">
         <div class="sns-button-wrapper">
           <a href="mailto:asaitogo@gmail.com">
@@ -96,20 +130,30 @@
               <span class="sns-name">Email</span>
             </button>
           </a>
-          <a href="https://www.facebook.com/togo.togo.35762241/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/togo.togo.35762241/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button class="sns-button">
               <facebook-icon class="sns-icon" :size="36" fillColor="#000E12" />
               <span class="sns-name">Facebook</span>
             </button>
           </a>
-          <a href="https://www.instagram.com/togo.asai/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/togo.asai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button class="sns-button">
               <instagram-icon class="sns-icon" :size="36" fillColor="#000E12" />
               <span class="sns-name">Instagram</span>
             </button>
           </a>
         </div>
-        <div class="contact-message">お気軽にご連絡ください。<br />ただ、お返事をさせていただくまでにお時間を要する場合があります。また、内容によりお返事ができない場合がございますのでご了承ください。</div>
+        <div class="contact-message">
+          お気軽にご連絡ください。<br />ただ、お返事をさせていただくまでにお時間を要する場合があります。また、内容によりお返事ができない場合がございますのでご了承ください。
+        </div>
       </div>
     </div>
   </NuxtLayout>
@@ -119,6 +163,12 @@
 definePageMeta({
   layout: false,
 });
+
+function removeHash() {
+  setTimeout(() => {
+    history.replaceState(null, null, " ");
+  }, 10);
+}
 </script>
 
 <script>
@@ -160,13 +210,12 @@ p {
   margin: 0;
   text-align: center;
   writing-mode: vertical-lr;
-  color: #b9b9b9;
-  text-shadow: 0px 4px 4px rgba(0, 178, 255, 0.8);
-  font-size: 42px;
+  color: #ffffff;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 2.5px;
+  letter-spacing: 5px;
 }
 
 .top-container {
@@ -189,7 +238,7 @@ p {
   writing-mode: vertical-lr;
   font-size: 20px;
   color: rgba(1, 42, 59, 1);
-  background-color: #a0a0a0cf;
+  background-color: #ffffffcf;
   /* padding:20px 3px 25vh 3px; */
   padding: 25vh 3px 20px 3px;
 }
@@ -219,8 +268,8 @@ p {
 
 .about-content {
   display: flex;
-  margin-left: auto;
-  width: 85%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .my-name {
@@ -257,42 +306,45 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 8px;
 }
 
 .skill-content {
   display: flex;
-  background-color: #132136;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  width: 85%;
+  gap: 24px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .skill-h3 {
-  margin-bottom: 10px;
-  color: #00b2ff;
-  font-size: 18px;
+  margin-bottom: 0;
+  font-size: 42px;
+  font-weight: 300;
+  color: #4d4d53;
 }
 
 .skill-list {
-  line-height: 180%;
+  line-height: 160%;
+  list-style: inside;
 }
 
 .skill-content img {
-  width: 65%;
+  width: 50%;
 }
 
 .work-container {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
+  margin-bottom: 30vh;
 }
 
 .work-gallery {
   display: flex;
   justify-content: space-between;
   align-items: space-between;
-  width: 85%;
-  margin-left: auto;
-  margin-bottom: 30vh;
+  width: 70%;
+  margin: 0 auto 0 auto;
 }
 
 .gallery-left {
@@ -556,7 +608,7 @@ p {
   }
   .contact-message {
     margin: 1rem 0;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .about-text p {

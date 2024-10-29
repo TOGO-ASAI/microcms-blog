@@ -23,7 +23,6 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@mdi/font": "^7.2.96",
     "aos": "^2.3.4",
-    "fibers": "^5.0.3",
     "sass": "^1.69.0",
     "sass-loader": "^13.3.2",
     "vue-material-design-icons": "^5.2.0"

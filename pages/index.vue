@@ -7,11 +7,12 @@
 </template>
 
 <script setup>
-const baseURL = "https://togoblog.microcms.io/api/v1/";
+const runtimeConfig = useRuntimeConfig();
+const baseURL = runtimeConfig.public.baseUrl;
 const { data } = await useFetch("/blogs", {
   baseURL,
   headers: {
-    "X-MICROCMS-API-KEY": "3ldJO9kyxU5kMMN3uYZ7vt22eJqWENFOh4g6", //環境変数にする
+    "X-MICROCMS-API-KEY": runtimeConfig.apiKey, //環境変数にする
   },
 });
 </script>
