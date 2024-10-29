@@ -1,16 +1,24 @@
 <script setup>
 const route = useRoute();
 const slug = route.params.slug;
-const config = useRuntimeConfig();
-const baseURL = config.public.baseUrl;
-const apiKey = config.public.apiKey;
-console.log("baseURL", baseURL);
-console.log("apiKey", apiKey);
-const { data: article } = await useFetch(`/blogs/${slug}`, {
-  baseURL: baseURL,
-  headers: {
-    "X-MICROCMS-API-KEY": apiKey,
-  },
+const runtimeConfig = useRuntimeConfig();
+const baseURL = runtimeConfig.public.baseUrl;
+const apiKey = runtimeConfig.public.apiKey;
+const article = ref({});
+onMounted(async () => {
+  console.log(baseURL);
+  console.log(apiKey);
+
+  const { data, error } = await useFetch(`/blogs/${slug}`, {
+    baseURL: baseURL,
+    headers: {
+      "X-MICROCMS-API-KEY": apiKey,
+    },
+  });
+  article.value = data.value;
+  if (error.value) {
+    console.error("Fetch error:", error.value);
+  }
 });
 </script>
 

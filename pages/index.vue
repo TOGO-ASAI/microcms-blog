@@ -12,7 +12,7 @@ const baseURL = runtimeConfig.public.baseUrl;
 const { data } = await useFetch("/blogs", {
   baseURL,
   headers: {
-    "X-MICROCMS-API-KEY": runtimeConfig.apiKey, //環境変数にする
+    "X-MICROCMS-API-KEY": runtimeConfig.public.apiKey, //環境変数にする
   },
 });
 </script>

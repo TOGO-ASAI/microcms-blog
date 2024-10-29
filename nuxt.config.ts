@@ -1,6 +1,7 @@
 import vuetify from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
+  ssr: false,
   experimental: {
     inlineSSRStyles: false,
   },
