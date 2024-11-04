@@ -316,6 +316,7 @@ p {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
+  font-size: 16px;
 }
 
 .skill-content {
@@ -329,7 +330,7 @@ p {
   margin-bottom: 0;
   font-size: 42px;
   font-weight: 300;
-  color: #4d4d53;
+  color: #fdfdfd;
 }
 
 .skill-list {
@@ -486,6 +487,7 @@ p {
 .contact-message {
   width: 60%;
   margin: auto;
+  font-size: 16x;
 }
 
 @media screen and (max-width: 960px) {
