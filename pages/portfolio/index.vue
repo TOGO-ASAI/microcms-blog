@@ -4,12 +4,17 @@
       <h1 class="top-title">Togo Asai</h1>
       <h2 class="">official website</h2>
       <div class="mt-9">
-        <Nuxt-link to="#about" @click.native="removeHash"
-          ><h3 class="scroll-arrow">Look Up ➡</h3></Nuxt-link
-        >
+        <button type="button" @click="scrollToAbout">
+          <h3 class="scroll-arrow">Look Up ➡</h3>
+        </button>
       </div>
     </div>
-    <div id="about" class="about-container" data-aos="fade-in">
+    <div
+      id="about"
+      ref="aboutSection"
+      class="about-container"
+      data-aos="fade-in"
+    >
       <h2 class="section-name">ABOUT</h2>
       <div class="about-content">
         <div class="about-text">
@@ -164,11 +169,15 @@ definePageMeta({
   layout: false,
 });
 
-function removeHash() {
-  setTimeout(() => {
-    history.replaceState(null, null, " ");
-  }, 10);
-}
+const aboutSection = ref(null);
+
+const scrollToAbout = () => {
+  if (aboutSection.value) {
+    aboutSection.value.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+};
 </script>
 
 <script>
